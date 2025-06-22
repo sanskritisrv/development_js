@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+
+</head>
+<body>
+   <h1>Dom heading </h1> 
+   <h4>lets learn about dom concepts in detail </h4>
+   <button id="btn1">Click me</button>
+   <script src="script.js"></script>
+</body>
+</html>
+
+<!-- window object- object created by the browser and not js which has verious methods inside it-->
+
+<!--Document Object Model- we can access html code inside the js file, inside the js file the html code becomes an object aur phir aata hai inside js, then window object ke andar ke subobject ho jata hai whci is called document aur issi ko hum document object model bhi kehte hai 
+console.log- printing ka kaam
+console.dir- special objects ke properties and methods print karane ke kaam aata hai  
+
+ DOM USE- is to do dynamic changes that is when we have the change something but file me to change nahi kar sakte to we chamge dynamically
+
+ DOM Manipulation- 
+ 1. by id - document.getElementById("myId")
+ 2. by class- document.getElementsByClassNmae("myClass")
+ 3. by tag-  document.getElementByTagName("p")
+ 4. by query selector- document.querySelector("class id tag")-- here jo bhi brackets ke andar likha hoga usse matching first element de dega.
+ read notes 
+--> 
+
+<!-- EVENTS- The change in the state of an on=bject is known as an event
+ events are fired to notify code of chnages 
+ eg- mouse events , double click , print event and many more 
+
+Event Handlin in JS- 
+
+Event Object - it is a special object that has details about the event.
+all event handlers have access to the event objects properties and methods.
+
+node.event=(evt)=> {
+handle here }
+
+Event Listeners- node.addEventListener(event, callback)
+node 
+ -->
+
+ <!-- CLASSES AND OBJECTS -
+  objects - they ahve properties and objects inside them 
+  PROTOTYPE-  Js objects have a special property called prototype jiske andar kuch properties hongi aur kuch methods honge
+  prototype apne aap se bhi bana ke likh sakte hai by the syntax- __proto__
+
+  eg const employee={
+  calcTax(){
+  console.log("tax rate is 10%");
+  },
+  };
+  const karanArjun={
+  salart:50000,};
+  karanArjun.__proto__=employee;
+  -isse hum employee function har jagah use kar sakte hai 
+
+  CLASSES- program code template for creating objects 
+  those objects will have some state(variables) and some behaviour (functions) inside it.
+
+  Syntax for creating objects 
+  let myobj=new classname();
+
+  CONSTRUCTOR- if not created is automatically invoked by new keyword and it is used to initialize the object
+
+  Properties of inheritance-
+  1. Inheritance- is passing down properties and methods from parent to child class.we use the keyword extends for it.
+
+  if child and parent have the same method childs method will be used this is called method overriding.
+
+  SUPER KEYWORD - keyword used to access the properties of the parent class . 
+
+  error handling - try catch blocks ko use karte hai hum isiliye  and then write the code or line inside the try block and then we go to the catch block
+
+  try(){}
+
+  catch(err)
+  console.log(err);
+
+  SYNCHRONOUS PROGRAMMING-
+  execution of the code in the order it is written is known as synchronous programming.
+
+  ASYNCHRONOUS PROGRAMMING- 
+  sometimes due to fetching data from the api or due to the synchronous execution , the consecutive instruction gets blocked so we run the aage ke instruction while parallely running the execution of that particular ins, this is called asynchronous programming.
+   This is exceuted by the function setTimeout
+   eg - setTimeout(HELLO, 2000)-- it will print hello after 2seconds, here HELLO is a funcrion that is printing hello.
+
+ CALLBACKS- a function passed as an argumetn to another function is called as a callback function.
+
+ CALLBACK HELL- nesting callback which is difficult to manage and understand therefore to introduced the concept of promises
+
+ PROMISES- in js is for eventual completion of task, 
+ let promise= new Promise((resolve,reject)=>{.....})
+ if promise is fulfilled then promise.then((res)=>{.....})
+ if promise if rejected then promise.catch((err)=>{...})
+
+ PROMISE CHAINING- is when ek promise.then ke sath we use dusra promise when we need to fetch second data after fetching first data.
+ ASYNC AWAIT- async function always returns a promise 
+ eg async function hello(){
+ console.log("hello");
+ }
+ await keyword is used to pause the execution of its surroundng async function until promise is settled
+ IIFE - immediatley invoked function execution is used jab hume unnecessarily function call na karna ho
+
+ fetch API - api stands for application programming interface.
+ the fetch() method is used to fetch a resouce (data)
+
+ let promise = fetch(url,[options])
+
+ AJAX IS asynchronous js and xml - pehle data format was xml
+ JSON is javsrcriot object notation - ab data is format me jata hai
+ json()- returns a second promise that returns or converts a json format ka data into a java script bject that can be used and read
+ status code - codes which show or tell the status of the req such as pass , fail , server error etc.
+ 
+
+
+
+
+   
+
+   >
+
+
+
+
+
+
+
+
+  -->
